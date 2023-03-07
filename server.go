@@ -48,7 +48,7 @@ func NewHttpServer(addr, dhaddr string) (*Server, error) {
 		Handler: server.serveMux(),
 	}
 
-	server.c, err = finderhttpclient.NewDHashClient(dhaddr)
+	server.c, err = finderhttpclient.NewDHashClient(dhaddr, dhaddr)
 	if err != nil {
 		return nil, err
 	}
