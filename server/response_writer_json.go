@@ -1,4 +1,4 @@
-package dhfind
+package server
 
 import (
 	"encoding/json"
